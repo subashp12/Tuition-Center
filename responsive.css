@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (max-width:425px) {
     .contactNav{
         display: none;
@@ -140,4 +141,148 @@
         padding: 0.2rem;
     }
 
+=======
+@media screen and (max-width:425px) {
+    .contactNav{
+        display: none;
+    }
+    .mainNav ul {
+        gap:0;
+        padding: 0;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .mainNav ul li{
+        font-size: medium;
+        text-align: center;
+        flex: 0 1 100%;
+        margin-top: 0.5rem;
+    }
+    .subjectNav ul{
+        overflow-x: auto;
+    }
+    .subjectNav ul::-webkit-scrollbar{
+        appearance: none;
+    }    
+    main{
+        flex-direction: column;
+    }
+    #circleContainer{
+        overflow-x: auto;
+    }
+    .timeTable{
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+    .Fees{
+        overflow-x: auto;
+    }
+    .contacts{
+        display:none;
+    }
+    .Fees div h1{
+        display: none;
+    }
+    .timeTable>*{
+        padding: 0.5rem;
+    }
+    .timeTable > table,th,td,tr{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .timeTable .Home,.timeTable .Oncampus,.timeTable .Online{
+        display: grid;
+        place-content: center;
+        font-size: smaller;
+    }
+    
+    .reviewContainer{
+        padding: 0.5rem;
+    }
+    .reviewContainer i{
+        display: none;
+    }
+    .reviewWrapper .Review{
+        width: fit-content;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .ContactUs,.Sponsors{
+        text-align: center;
+    }
+    
+}
+@media  screen and (min-width:426px) and (max-width:768px) {
+    .mainNav ul{
+        justify-content: space-evenly;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+    .mainNav ul::-webkit-scrollbar{
+        appearance: none;
+    }
+    .subjectNav ul{
+        overflow-x: auto;
+    }
+    .subjectNav ul::-webkit-scrollbar{
+        appearance: none;
+    }  
+    main{
+        flex-direction: column;
+    }
+    
+    main .forewordContainer{
+        order: -1;
+    }
+    #circleContainer{
+        overflow-x: auto;
+    }
+    .timeTable{
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+    .Fees{
+        overflow-x: auto;
+    }
+    .contacts table{
+        display: none;
+    }
+    .reviewContainer{
+        padding: 0.5rem;
+    }
+    .reviewContainer i{
+        display: none;
+    }
+    .reviewWrapper .Review{
+        width: fit-content;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .ContactUs,.Sponsors{
+        text-align: center;
+    }
+}
+
+@media  screen and (min-width:769px) and (max-width:1024px){
+    main{
+        flex-direction: column;
+    }
+    main .forewordContainer{
+        order: -1;
+    }
+    .timeTable{
+        overflow-x: auto;
+    }
+    .contacts img{
+        display: none;
+    }
+    .contacts table tr,th,td{
+        width: fit-content;
+        padding: 0.2rem;
+    }
+
+>>>>>>> ff02352fc10b919384141e440b492d9ad2ac68a6
 }

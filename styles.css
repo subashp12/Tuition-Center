@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -487,3 +488,494 @@ padding: 0.5rem;
 
 
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --mainColor:black;
+    --primaryColor:rgb(221, 216, 216);
+    --secColor:rgb(241, 234, 234);
+}
+.contactNav{
+    display: flex;
+    justify-content: end;
+    gap:1rem;
+    background-color: var(--primaryColor);    
+    padding: 0.2rem 0.5rem 0.2rem ;
+    position: relative;
+}
+.contactNav  .bx{
+    font-size: 1.2rem;
+    position: relative;
+    top:4px;
+}
+.mainNav ul{
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: right;
+    gap:5rem;
+    padding: 0.9rem 1.2rem;
+    font-size: 1.3rem;
+    position: relative;
+}
+ .mainNav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.mainNav ul li{
+    list-style-type:none;
+    position: relative;
+} 
+.sticker{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.active::after{
+    content:'';
+    height:0.5rem;
+    width: 100%;
+    display: block;
+    background-color: var(--primaryColor); 
+    position: absolute;   
+}
+.subjectNav ul{
+    background-color:var(--secColor);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0.2rem 0;
+
+}
+.subjectNav ul li, .subjectNav ul li a{
+    text-decoration: none;
+    list-style-type:none;
+    font-size: 1.2rem;
+    color:var(--mainColor);
+    position: relative;
+}
+
+main{
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+main .offersContainer{
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.offersContainer{
+    background-color: var(--mainColor);
+    padding:0.5rem 1.2rem;
+}
+.offer{
+    background:linear-gradient(to right,rgb(187, 180, 180),white,aliceblue,whitesmoke);
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.offer:hover{
+    scale: 1.08;
+}
+#offerCard{
+    background:linear-gradient(to bottom left,rgb(173, 168, 168),rgb(65, 63, 63))
+}
+.offer h3{
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-align: center;
+}
+.offer p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+}
+#offerB{
+    background-color: burlywood;
+}
+#offerC{
+    background-color: pink;
+}
+.forewordContainer{
+    padding: 0.5rem;
+    background-color: var(--mainColor);
+    color: white;
+}
+.forewordContainer .imageWrapper{
+    width: 100px;
+    height: 100px;
+}
+.forewordContainer .imageWrapper img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.forewordContainer h3{
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+.forewordContainer h5{
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+.forewordContainer p{
+    margin-top: 0.5rem;
+    padding: 0.25rem;
+    background-color: aliceblue;
+    padding: 1rem;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+#offerB .imageWrapper{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 4px soild black;
+    border-radius: 50%;
+    background-image: url(Roshika.jpg);
+    background-position-x:32.6rem;
+    background-size:cover
+}
+.comingSoon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#circleContainer{
+    padding: 2rem;
+    display: flex;
+    gap:1rem;
+    background-color: var(--secColor);
+}
+#circleContainer .circle{
+    flex: 1 1 auto
+}
+.circle{
+    padding: 1rem;
+    font-size: 3rem;
+    background-color: var(--mainColor);
+    color: var(--secColor);
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 1500ms ease-in;
+}
+.circle span{
+    display: block;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+}
+.onHoverCard{
+    position: absolute;
+    inset: 0;
+    background:linear-gradient(to top, gray ,aliceblue ); 
+    color: black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transition: all 1500ms ease-in;
+    display: none;
+}
+.circle:hover .onHoverCard{
+    display: flex;
+}
+ .circle:hover #circleContainer{
+    background-color: var(--mainColor);
+}
+.timeTable{
+    background-color: var(--mainColor);
+    padding: 2rem;
+    display: flex;
+}
+
+.timeTable>*{
+    text-align: center;
+    flex: 1 1 auto;
+    background:linear-gradient(to top,gray,aliceblue);
+    padding: 1rem;
+}
+.timeTable .Home{
+    border-top-left-radius: 5rem;
+}
+.timeTable .Oncampus{
+    border-bottom-right-radius: 5rem;
+}
+.timeTable .Online{
+    border-radius: 0;
+}
+.timeTable>* table{
+    margin: 0.5rem auto;
+}
+.timeTable table,th,td,tr{
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+}
+ .timeTable table tr:nth-child(even){
+    background-color: gray;
+    cursor: pointer;
+}
+.Online tr:nth-child(odd){
+    background-color:gray;
+}
+.Online tr:nth-child(even){
+    background-color:transparent;
+}
+.Online{
+    display: grid;
+    place-content: center;
+}
+.Fees{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+.Fees table{
+    margin: 0 auto;
+}
+.Fees .HomeFees,.OnlineFees,.OncampusFees{
+    flex:1 1 auto;
+    text-align: center;
+}
+.Fees table tr:nth-child(odd){
+    background-color: var(--primaryColor);
+}
+.contacts{
+    background-color:var(--mainColor);
+    padding: 2.5rem;
+}
+.contacts table{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.imageBox img{
+    border-radius: 50%;
+}
+.contacts table tr:nth-child(even){
+    background-color: var(--secColor);
+}
+.contacts table tr:nth-child(odd){
+    background-color: gray;
+}
+.reviewContainer{
+    background-color: var(--mainColor);
+    padding:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.reviewContainer i{
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+.reviewContainer .Review img{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border: 5px solid aliceblue;
+    border-radius: 50%;
+}
+.reviewContainer .Review{
+    background:linear-gradient(to top,black,rgb(170, 168, 168));
+    text-align: justify;
+    text-align-last: center;
+    width: 700px;
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: white;
+}
+.reviewWrapper{
+    border-radius: 1rem;
+    display: flex;
+    width: 700px;
+    overflow-x: auto;
+}
+.reviewWrapper .Review{
+    flex-shrink: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+footer{
+    color: white;
+    padding: 1rem;
+    display: flex;
+    background:linear-gradient(to top,black,rgb(170, 168, 168));
+}
+footer .ContactUs,.Sponsors{
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+footer li,a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-top: 0.5rem;
+}
+footer .ContactUs, .Sponsors{
+text-align: left;
+padding: 0.5rem;
+}
+.AboutUs{
+    padding: 1rem;
+    text-align: center;    
+}
+.AboutUs p{
+    margin-top:0.8rem;
+    text-align: justify;
+    text-align-last: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> ff02352fc10b919384141e440b492d9ad2ac68a6
